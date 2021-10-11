@@ -1,13 +1,17 @@
 package com.company;
 
-import java.util.Scanner;
-
 public class Employee extends Person{
-    Scanner scan = new Scanner(System.in);
-    public void employeeInput() {
-        System.out.println("Please enter Employee's name: ");
-        String employeeNameInput = scan.nextLine();
-        System.out.println("Please enter Employee's salary: ");
-        String employeeSalaryInput = scan.nextLine();
+    private double salary;
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+//    overriding the selfIntro method in Person
+    public void selfIntro(){
+        System.out.println("employee, your name is "+super.name+", you were born in year "+super.yearBorn+", your hobby is "+super.hobby+". And your salary is "+salary+".");
     }
 }

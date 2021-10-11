@@ -6,9 +6,9 @@ public class Person  {
 //    these are called class variables
 //    private(Access Modifier, along with public)
 //    so it's more secure(only the object know what the name is)
-    private String name;
-    private int yearBorn;
-    private String hobby;
+    public String name;
+    public int yearBorn;
+    public String hobby;
 
     Person(){
 
