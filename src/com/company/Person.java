@@ -1,7 +1,7 @@
 package com.company;
 //class is the blueprint of objects
 //And you use constructors to construct them
-public class Person  {
+public class Person implements PersonInterface{
 //    Properties for the class, or DATA
 //    these are called class variables
 //    private(Access Modifier, along with public)
@@ -45,4 +45,26 @@ public class Person  {
         System.out.println("my name is "+this.name+", I was born in year "+yearBorn+", and my hobby is "+hobby+". ");
     }
 
+    @Override
+    public void calculate() {
+        int i = 666;
+        double j = i;
+        System.out.println(j);
+
+    }
+
+    @Override
+    public void slogan() {
+        System.out.println("Our mission is our mission");
+
+    }
 }
+
+interface PersonInterface{
+//    any variable declared in an interface are automatically public, static amd final
+    String organizationName = "Humanity Limited";
+//    all methods in an interface are abstract, and automatically public
+    void calculate();
+    void slogan();
+}
+

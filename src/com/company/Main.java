@@ -43,9 +43,9 @@ public class Main {
         employee1.selfIntro();
 
 //        let user setup a 
-        person1Test person1Test1 = new person1Test();
+        Student student1 = new Student();
         System.out.println("Next.");
-        System.out.println("Hi, person1Test No.1, Please enter your name: ");
+        System.out.println("Hi, Student No.1, Please enter your name: ");
         String person1TestNameInput = scan.nextLine();
 
         System.out.println("Please enter your year of birth: ");
@@ -59,11 +59,16 @@ public class Main {
         System.out.println("Please enter your GPA: ");
         double person1TestGPAInput = scan.nextDouble();
 
-        person1Test1.setName(person1TestNameInput);
-        person1Test1.setYearBorn(person1TestYearBornInput);
-        person1Test1.setHobby(person1TestHobbyInput);
-        person1Test1.setGPA(person1TestGPAInput);
-        person1Test1.selfIntro();
+        student1.setName(person1TestNameInput);
+        student1.setYearBorn(person1TestYearBornInput);
+        student1.setHobby(person1TestHobbyInput);
+        student1.setGPA(person1TestGPAInput);
+        student1.selfIntro();
+
+//        calling the calculate from interface
+        System.out.println("calculate result: ");
+        Person personInterface = new Person();
+        personInterface.calculate();
 
     }
 }

@@ -14,7 +14,7 @@ public class Person1 {
     }
     Scanner scan = new Scanner(System.in);
     void testEncapsulation(){
-        person1Test person1Test1 = new person1Test();
+        Student person1Test1 = new Student();
         System.out.println("Next.");
         System.out.println("Hi, person1Test No.1, Please enter your name: ");
         String person1TestNameInput = scan.nextLine();
